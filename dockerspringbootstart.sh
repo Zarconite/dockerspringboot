@@ -7,4 +7,4 @@ git clone https://github.com/Zarconite/spring-boot-hello-world
 cd spring-boot-hello-world
 mvn clean package
 docker build -t spring-boot-hello-world:latest .
-docker run -d -p 9000:9000 spring-boot-hello-world
+docker run -d -p 9000:9000 --name spring-boot-hello-world spring-boot-hello-world
